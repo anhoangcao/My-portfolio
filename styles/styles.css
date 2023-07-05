@@ -464,6 +464,87 @@ section {
   border-radius: 5px;
 }
 
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .left-contact .contact-icons {
+  display: flex;
+  margin: 1.5rem 0;
+  margin-top: 2rem;
+}
+.contact-content-con .left-contact .contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-con .left-contact .contact-icons a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-icons a:hover i {
+  color: var(--color-white);
+}
+.contact-content-con .left-contact .contact-icons a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.footer-text {
+  display: block;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.text-span {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.text-p {
+  font-weight: 600;
+  text-align: center;
+}
+
 .btn-con {
   display: flex;
   align-self: flex-start;
