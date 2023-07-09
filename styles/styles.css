@@ -21,6 +21,20 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
+.light-mode {
+  --color-primary: #F1F1F1;
+  --color-secondary: #419cd1cb;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -37,7 +51,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   padding: 0 !important;
@@ -97,7 +111,7 @@ section {
   }
 }
 
-.controlls {
+.controls {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -108,7 +122,7 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
-.controlls .control {
+.controls .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
@@ -121,16 +135,16 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
-.controlls .control i {
+.controls .control i {
   color: var(--color-grey-2);
   font-size: 1.2rem;
   pointer-events: none;
 }
-.controlls .active-btn {
+.controls .active-btn {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.controlls .active-btn i {
+.controls .active-btn i {
   color: var(--color-white);
 }
 
@@ -545,6 +559,30 @@ section {
   text-align: center;
 }
 
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
 .btn-con {
   display: flex;
   align-self: flex-start;
@@ -614,4 +652,60 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 5.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 !important;
+  }
+  .them-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    padding-right: 0rem !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .header-content .right-header p {
+    margin-bottom: 200px;
+  }
+  .header-content .right-header .img-small {
+    left: 37%;
+    top: 250px;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .controls {
+    top: auto;
+    bottom: -36px;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 0.5rem 1rem;
+  }
+  .main-btn {
+    left: 75%;
+    margin: -10px 0 20px 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,65 @@
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0 !important;
+
+    }
+    .them-btn {
+        width: 50px;
+        height: 50px;
+    }
+    .header-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        
+    }
+    .left-header {
+        .h-shape {
+            display: none;
+        }
+    }
+    .right-header {
+        grid-row: 1;
+        padding-right: 0rem !important;
+        width: 90%;
+        margin: 0 auto;
+        .name {
+            font-size: 2.5rem !important;
+            text-align: center;
+            padding-top: 3rem;
+        }
+    }
+
+    .header-content .right-header p {
+        margin-bottom: 200px;
+    }
+
+    .header-content .right-header .img-small {
+        left: 37%;
+        top: 250px;
+    }
+
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .controls {
+        top: auto;
+        bottom: -36px;
+        flex-direction: row;
+        justify-content: center;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control {
+            margin: .5rem 1rem;
+        }
+    }
+
+    .main-btn {
+        left: 75%;
+        margin: -10px 0 20px 0;
+    }
+}
