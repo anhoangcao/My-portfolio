@@ -147,6 +147,7 @@
 @media screen and (max-width:1250px){
     .projects{
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
     }
 }
 
@@ -158,7 +159,7 @@
 
 @media screen and (max-width: 1070px) {
     .about-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         .right-about {
             padding-top: 2.5rem;
         }
@@ -221,10 +222,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .about-container .right-about{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .timeline{
         grid-template-columns: repeat(1, 1fr);
     }
     .main-title{
