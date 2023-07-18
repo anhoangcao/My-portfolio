@@ -207,6 +207,7 @@ section {
   border-radius: 50%;
   left: 70%;
   top: 20%;
+  background-color: #10A37F;
 }
 
 .about-container {
@@ -632,7 +633,7 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 1rem 0.4rem;
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
