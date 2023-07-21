@@ -439,6 +439,10 @@ section {
   align-items: center;
   border-radius: 0.375rem;
 }
+.projects .project-item .blog-text .language .lang .img-logo {
+  width: 30px;
+  height: 20px;
+}
 .projects .project-item .blog-text .language .lang i {
   display: flex;
   align-items: center;
