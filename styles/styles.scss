@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -120,19 +119,71 @@ section {
 //     transform: translateY(0) scale(1);
 // }
 
+// .active {
+//     display: block;
+//     animation: scaleAnim 1s ease-in-out;
+//     transform: translateY(0) scaleY(1);
+//     @keyframes scaleAnim {
+//         0% {
+//             transform: translateY(-100%) scale(0);
+//         }
+//         100% {
+//             transform: translateY(0) scale(1);
+//         }
+//     }
+// }
+
+// .active2 {
+//     // display: block;
+//      /* Định nghĩa keyframes cho animation */
+//      @keyframes slideInFromRight {
+//         from {
+//         transform: translateX(100%);
+//         opacity: 0;
+//         }
+//         to {
+//         transform: translateX(0);
+//         opacity: 1;
+//         }
+//     }
+//     animation: slideInFromRight 2s ease-in-out;
+// }
+
+/* Định nghĩa keyframes cho animation scaleAnim */
+@keyframes scaleAnim {
+    0% {
+        transform: translateY(-100%) scale(0);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Áp dụng animation scaleAnim vào class .active */
 .active {
     display: block;
     animation: scaleAnim 1s ease-in-out;
     transform: translateY(0) scaleY(1);
-    @keyframes scaleAnim {
-        0% {
-            transform: translateY(-100%) scale(0);
-        }
-        100% {
-            transform: translateY(0) scale(1);
-        }
+}
+
+/* Định nghĩa keyframes cho animation slideInFromRight */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(140%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
+
+/* Áp dụng animation slideInFromRight vào class .active2 */
+.active2 {
+    /* display: block; */
+    animation: slideInFromRight 2s ease-in-out;
+}
+
 
 
 // Controls
@@ -262,6 +313,7 @@ section {
             justify-content: center;
             margin-top: 14px;
         }
+            
         // .img-small {
         //     position: absolute;
         //     border-radius: 50%;
@@ -401,6 +453,7 @@ section {
     }
 }
 
+
 // // Timeline
 // .timeline {
 //     display: grid;
@@ -533,34 +586,22 @@ section {
                 cursor: pointer;
                 &:hover { color: var(--color-secondary); }
             }
-            .language {
-                display: flex;
+            .language {       
                 .lang {
                     padding-top: 4px;
                     padding-left: 8px;
                     padding-right: 8px;
                     padding-bottom: 2px;
                     background-color: var(--color-secondary);
-                    margin: 0 8px 8px 0;
-                    min-width: 88px;
-                    display: flex;
+                    margin: 0 4px 10px 0;
+                    display: inline-flex;
                     align-items: center;
                     border-radius: 0.375rem;
-                    .img-logo {
-                        width: 30px;
+                    svg {
                         height: 20px;
-                        
-                    }
-                    i {   
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 20px;
-                        color: var(--color-primary);
                     }
                     span {
                         margin: 0 0 0 4px;
-                        display: flex;
                         align-items: center;
                         font-size: 14px;
                         font-weight: 600;
@@ -569,7 +610,7 @@ section {
                     
                 }
             }
-            p{
+            p {
                 color: var(--color-grey-2);
                 line-height: 2rem;
                 padding-bottom: 1rem;
@@ -740,17 +781,6 @@ section {
         font-size: 4rem;
         font-weight: 700;
         span { color: var(--color-secondary); }
-        .bg-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: var(--color-grey-5);
-            transition: all .4s ease-in-out;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size: 5.3rem;
-        }
     }
 }
 
