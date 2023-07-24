@@ -16,6 +16,7 @@
     }
 
     .left-header{
+        margin-top: 16px;
         .h-shape{
             display: none;
         }
@@ -37,7 +38,7 @@
     }
 
     .controls{
-        top: auto;
+        top: 560px;
         bottom: 0;
         flex-direction: row;
         justify-content: center;
@@ -47,6 +48,11 @@
         background-color: var(--color-grey-5);
         .control{
             margin: 1rem .4rem;
+            width: 50px;
+            height: 50px;
+            i {
+                font-size: 1.2rem;
+            }
         }
     }
 

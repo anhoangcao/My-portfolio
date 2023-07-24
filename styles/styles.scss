@@ -180,7 +180,6 @@ section {
 
 /* Áp dụng animation slideInFromRight vào class .active2 */
 .active2 {
-    /* display: block; */
     animation: slideInFromRight 2s ease-in-out;
 }
 
@@ -204,7 +203,7 @@ section {
         background-color: var(--color-grey-4);
         width: 55px;
         height: 55px;
-        border-radius: 50%;
+        border-radius: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -212,7 +211,7 @@ section {
         box-shadow: var(--box-shadow-1);
         i {
             color: var(--color-grey-2);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             pointer-events: none;
         }
     }
@@ -229,8 +228,8 @@ section {
 .theme-btn {
     top: 5%;
     right: 3%;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     background-color: var(--color-grey-4);
     cursor: pointer;
@@ -623,6 +622,16 @@ section {
     opacity: 1;
     transform: scale(1);
     transition: all .6s ease-in-out;
+}
+
+.hover-git {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.hover-git:hover {
+    color: var(--color-secondary);
+    transition: all .3s ease-in-out;
 }
 
 // Blogs
