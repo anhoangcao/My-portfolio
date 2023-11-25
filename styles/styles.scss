@@ -313,13 +313,6 @@ section {
             margin-top: 14px;
         }
             
-        // .img-small {
-        //     position: absolute;
-        //     border-radius: 50%;
-        //     left: 70%;
-        //     top: 20%;
-        //     background-color: #10A37F;
-        // }
     }
 }
 
@@ -512,7 +505,7 @@ section {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
     .project-item {
