@@ -368,29 +368,40 @@ section {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
+
 .projects .project-item {
   position: relative;
-  border-radius: 15px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước tổng */
 }
-.projects .project-item img {
+
+.image {
   width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước tổng */
 }
+
+.projects .project-item img {
+  width: 100%; /* Giảm kích thước theo chiều ngang để lấp đầy border */
+  height: 100%; /* Giảm kích thước theo chiều dọc để lấp đầy border */
+  border-radius: 8px;
+}
+
 .projects .project-item .hover-items {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 15px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,6 +410,7 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
+
 .projects .project-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
